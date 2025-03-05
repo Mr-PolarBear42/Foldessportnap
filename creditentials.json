@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "sportnap",
+    "private_key_id": "2b9b7c85bb1ba416f831e27d8af15e5dabf62e62",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvf/qDTkpHp22I\nOrF9yVtQLPG5JJ3o4hvb9XzkKIv+K4iTla+246ey/BIWUd3oQB1kwvHABR3XH5Rh\n+/jdOogjWO4vAeKFnKdb9KhArpNJiykTSAjLbmP/kZHlu1GbvzTZmEmAfpU3+ziK\n4GpNNWd5EzltxoAzhpX4aQRT88FNALcsH5idsiRdPA4DXmCl7DifdNiXl441BtiF\nqnsmrK6QnseOOxd2uuM4Ip/OJQh2vQL1VxY+XXlPzWOiWwNJvMSt3nTNkJXA66v5\nojcCIZV+Dx1JaYjUfclw3R7iUKTnOnSWbvjxGxjZO6aHN65FuKNkpnKkIqjapEB3\nQzSiAwuNAgMBAAECggEAGrSCNb3RjsK655pqzMW5l+Mm6zHXt4rEi315AizrVINi\nVnbWFKHisFksFWpitocfEeiaKcp9hnEfPqO9dEiGU76iC9QhGIzEaLk7axBFiFDd\nMLpq4C3NmKOZjFgrLGR1kdDbCmr4oNqg+Xz5oAMK2kEjIYGtm2mU44ZzaqTyWpmL\nFWks47UBrbsD49QlEE4j/nOIx6c7Y0SzY90UJMTa6/I7PW545PxaVDmpG2eJTd7b\nFDYP2VVckwfgUDMHYieULPmVN03atehxeVD2j9lzwnxkt6XlsQwzeHpzcEYyZXYo\nzRFo1NoN4gDUet+J4xQzsHaMjlymTthX7SU/OzBkgQKBgQDke3jv78r7uYXOqtxC\nUOuroVSVUDUBZAF6T/ecpbxGw5U6Zz1nlFMDQUQXEZctJ4/RB0dIpWoSXJeSAbgy\nJBcDLc3FsIVVmZijaMezdE5tnkM2CL6prohjiTthNSEbggnyToKX68OIuiXmGDKj\niTCjYN9cTB4JKbDiEQgWRE5zzQKBgQDEovZBdft0TChJNQ5pOi8YwP2j3BGYx2r7\nIehQrXOxXXgO+ibd/WemCWDHN5OnIt1wE6POLYBI5H1KL/9bey7QxdtcftwlCeos\nD8VGS8Ldblqtjo/bhG3bWyN+vUCDb4U9pRBOvJgyDNCbvsPRsYDh5h89VvkedzAc\nej/iOLK2wQKBgQDCVl9MPfq511f/rAaChY+ewS9PfRRIpYY4QdJLtBCLZAoGzg9F\njbx59UZ0FKswZgkGcxlnqgKpsYXeU4YXZ+kG9Cuk7XrLj0RsIVBSzCd1R3rFd/Ss\nIN6zQuN10Bnj6tyI88xSad876ZEYwBY6URNEs73oJHobsxFXh8MIJXtRNQKBgQDA\nDU4pR1tuDgf24GwP2HUxXyUbypAhQPw7BbYKPi7WF61wK2CUxrBaGaS9TonW3xWa\nJoSBli1KhGfecpycs+ZYoDaM05aeUl215T1PWCWd8e98vdXBmElXyl8TpTICbYSc\nXcBctpSLpbqFsz88anqvp/vxBCZSXCTQW5JTl/7swQKBgHLkx+8r2b9Z3ts58R1x\nZGhO3CoANszzDg8OuGkMqqF0PqzTbHvRjODsxPXmU88EGtAdeCTiQUyLX18fzkEU\nxtkwWzVm5nrXm+Cv5Pm3NtZm5NwqiVpdVGJU6E85iH3Q9YwmImClMqMSYSbOeji8\n82wY2yzuN8BvKS2ep8ZGUFqC\n-----END PRIVATE KEY-----\n",
+    "client_email": "mododsito@sportnap.iam.gserviceaccount.com",
+    "client_id": "113682432723859971122",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mododsito%40sportnap.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
