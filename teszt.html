@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Edit Google Sheet</title>
 </head>
 <body>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <h1>Edit Google Sheet</h1>
+    <form id="sheetForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
         <br>
-         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
         <br>
-        <button type="submit">Login</button>
+        <button type="submit">Submit</button>
     </form>
-    <script type="text/javascript" src="adatkezeles.js"></script>
-    <script>
-        const name=document.getElementById("username").value;
-        const password= document.getElementById("password").value;
-        AppendToSheets(name,password)
-    </script>
+
+    <script src="adatkezeles.js"></script>
 </body>
 </html>

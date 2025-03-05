@@ -1,1 +1,3 @@
 sheetsid=1bnKewpKMiUJCScWPDOhoMnDGNbHe-uzXH1J_PDFaS34
+clientid= 797961482887-a6ccsi8odgpqep441j78eijkcl9j5ie0.apps.googleusercontent.com
+api key = AIzaSyDsyjebdNUwGeEkGxZ1FAcDEdyw4ir4Byc
