@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    justify-items: center;
+    
 }
 .flex-container{
     flex-direction: column;
@@ -20,18 +20,27 @@ body{
     max-width: 400px;
     margin-top: 20%;
 }
-h2 {
+h1{ /*A sportok / egyebek címéhez*/
     text-align: center;
+}
+h2 { /*A sportok leírásához*/
+    text-align: left;
+}
+h3{
+    text-align: left;
+    padding-left: 1cm;
+    size: 20px;
 }
 label {
     font-weight: bold;
 }
 input, select, button {
     
-    width: 95%;
+    width: 20%;
+    margin-left: 1cm;
     padding: 10px;
     margin-top: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     
