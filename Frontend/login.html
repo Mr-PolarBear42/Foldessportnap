@@ -9,7 +9,7 @@
     <h2>Bejelentkezés</h2>
         <form id="bejelentkezés">
             <label for="név">Név:</label>
-            <input type="text" name="név" id="név" required>
+            <input type="text" name="name" id="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="évfolyam">Évfolyam:</label>
@@ -29,9 +29,20 @@
                 <option value="E">E</option>
                 <option value="Nyek">Nyek</option>
             </select>
-            <input type="button" name="b1" value="Register"
+            <input type="button" name="b1" value="Register" id="register"
                 onclick="location.href='valasztas.html'">
         </form>
     </div>
+    <script>
+        document.getElementById("register").addEventListener("click",function(){
+            const nameofstudent=document.getElementById("name").value;
+            const emailofstudent=document.getElementById("email").value;
+            const gradeofstudent=document.getElementById("evfolyam").value;
+            const classofstudent=document.getElementById("osztaly").value;
+            const data={name:nameofstudent, email:emailofstudent,grade:gradeofstudent,class:classofstudent};
+            sessionStorage.setItem('userData', JSON.stringify(data))
+            console.log(data)
+    })
+        
+    </script>
 </body>
-

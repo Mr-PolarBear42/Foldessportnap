@@ -1,23 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Csapatsportminta</title>
     <link rel="stylesheet" href="main.css">
 </head>
-    <body>
-        <h1>A sport leírása, szabályok stb</h1>
-        <div class="container">
-            <h2>Csapattársak</h2>
-            <form id="csapattarsak"></form>
-            <label class="h2" for="csapapttars1">Csapat társ 1</label>
+<body>
+    <h1>A sport leírása, szabályok stb</h1>
+    <div class="container">
+        <h2>Csapattársak</h2>
+        <form id="csapattarsak">
+            <label class="h2" for="csapattars1">Csapat társ 1</label>
             <input type="text" name="csapattars1" id="csapattars1">
-            
-        </div>
-    </body>
-    <button type="button" onclick="onClick()">Regisztrálás</button>
+        </form>
+    </div>
+    <button onclick="asd()">Regisztrálás</button>
+
+    <!-- Move the script to the end of the body -->
+     <script type="text/javascript" src="sendData.js"></script>
     <script>
-        function onClick(){
-            alert("Hello World");
-            history.back();
+        function asd(){
+            console.log("Button clicked!");
+            alert("Button clicked!");
+            const csapattars1 = document.getElementById("csapattars1").value;
+            sendData("Teszt", csapattars1, "random");
         }
+        
     </script>
+</body>
+</html>
