@@ -8,7 +8,7 @@
         <h1>Erőnlét</h1>
         <h2>Szabályok: </h2>
         <h3>- Különböző erőnléti feladatok darabszámra/időre</h3>
-    </body>
+    
     <div class="container">
         <h1>Sportok</h1>
         <label for="fekvotamasz">
@@ -30,11 +30,17 @@
         </label>
         
     </div>
-    <button type="button" onclick="onClick()">Regisztrálás</button>
+    <button onclick="submitData()">Regisztrálás</button>
+
+    <!-- Move the script to the end of the body -->
+     <script type="text/javascript" src="sendData.js"></script>
     <script>
-        function onClick(){
-            alert("Hello World");
-            history.back();
+        function submitData(){
+            console.log("Button clicked!");
+            alert("Button clicked!");
+            const csapattars1 = document.getElementById("csapattars1").value;
+            sendData("Teszt", csapattars1, "random");
         }
+        
     </script>
-    
+</body>
