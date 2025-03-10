@@ -11,11 +11,12 @@
         <h3>- 11 pontos BO3 meccsek</h3>
         <h3> Döntő formátuma: FT3 (first to 3)</h3>
     </body>
-    <button type="button" onclick="onClick()">Regisztrálás</button>
+    <button onclick="submitData()">Regisztrálás</button>
+     <script type="text/javascript" src="sendData.js"></script>
     <script>
-        function onClick(){
-            alert("Hello World");
-            history.back();
+        function submitData(){
+            sendData("Asztalitenisz(egyeni)", {}, "Nincs");
         }
+        
     </script>
     

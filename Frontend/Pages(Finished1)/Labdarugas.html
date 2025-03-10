@@ -36,7 +36,10 @@
             console.log("Button clicked!");
             alert("Button clicked!");
             const csapattars1 = document.getElementById("csapattars1").value;
-            sendData("Teszt", csapattars1, "random");
+            const csapattars2 = document.getElementById("csapattars2").value;
+            const csapattars3 = document.getElementById("csapattars3").value;
+            const csapattars4 = document.getElementById("csapattars4").value;
+            sendData("Teszt", {csapattars1,csapattars2,csapattars3,csapattars4}, "Nincs");
         }
         
     </script>
