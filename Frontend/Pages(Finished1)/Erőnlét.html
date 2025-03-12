@@ -24,9 +24,9 @@
             Plank
             <input type="checkbox" name="plank" id="plank">
         </label>
-        <label for="fekvotamasz">
+        <label for="egyeb">
             Valami egyéb
-            <input type="checkbox" name="fekvotamasz" id="fekvotamasz">
+            <input type="checkbox" name="egyeb" id="egyeb">
         </label>
         
     </div>
@@ -35,11 +35,21 @@
     <!-- Move the script to the end of the body -->
      <script type="text/javascript" src="sendData.js"></script>
     <script>
+        const sports="";
+        if(document.getElementById("fekvotamasz").value==true){
+            sports+=" fekvőtámasz";
+        }
+        if(document.getElementById("huzodkodas").value==true){
+            sports+=" húzódzkodás";
+        }
+        if(document.getElementById("plank").value==true){
+            sports+=" plank";
+        }
+        if(document.getElementById("egyeb").value==true){
+            sports+=" egyéb";
+        }
         function submitData(){
-            console.log("Button clicked!");
-            alert("Button clicked!");
-            const csapattars1 = document.getElementById("csapattars1").value;
-            sendData("Teszt", csapattars1, "random");
+            sendData("Erőnlét", {}, sports);
         }
         
     </script>
