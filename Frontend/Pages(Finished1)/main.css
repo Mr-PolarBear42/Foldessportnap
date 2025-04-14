@@ -1,6 +1,7 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: #f8ad0b;
+    background-color: #0d11f1;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -15,7 +16,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    background: #fff;
+    background: #0346fd;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,11 +44,11 @@ label {
     font-weight: bold;
 }
 input, select, button {
-    
+    color: #000000;
     padding: 10px;
     margin-top: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #049afd;
     border-radius: 5px;
     width: 100%;
 }
