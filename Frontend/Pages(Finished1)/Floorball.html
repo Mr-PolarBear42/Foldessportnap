@@ -1,0 +1,66 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floorball</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Floorball</h1>
+    <h2>Szabályok: </h2>
+    <h3>- Csapatonként egy fő regisztráljon!</h3>
+    <h3>- A nevezési mezőbe magadat nem kell megadnod!</h3>
+    <h3>- Körmérkőzéses formátum.</h3>
+    <h3>- 3 fős csapatok nevezését várjuk.</h3>
+    <h4>(2 vagy kevesebb megjelenő tag esetén a csapat automatikusan veszít)</h4>
+    <h3>- A mérkőzések 5 percig tartanak.</h3>
+    <h3>- Döntetlen esetén büntető párbaj dönt az eredményről</h3>
+    <h3>Helyszín: C Tornaterem<h3>
+    <div class="container">
+        <h1>Nevezés</h1>
+        <h2>Csapattagok</h2>
+        <form id="csapattarsak"></form>
+        <label class="h2" for="csapattars1">Csapattag 1</label>
+        <input type="text" name="csapattars1" id="csapattars1" required><br>
+        <label class="h2" for="csapattars2">Csapattag 2</label>
+        <input type="text" name="csapattars2" id="csapattars2" required><br>
+        <h2>Kategória:</h2>
+        <label for="fiukategoria">Fiú/Vegyes</label>
+        <input type="checkbox" name="fiukategoria" id="fiukategoria" class="category-checkbox" checked>
+        <label for="lanykategoria">Lány</label>
+        <input type="checkbox" name="lanykategoria" id="lanykategoria" class="category-checkbox">
+    </div>
+    <button onclick="submitData()">Regisztrálás</button>
+
+    
+    <script type="text/javascript" src="sendData.js"></script>
+    <script>
+    
+        const categoryCheckboxes = document.querySelectorAll('.category-checkbox');
+        
+        categoryCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    categoryCheckboxes.forEach(cb => {
+                        if (cb !== this) cb.checked = false;
+                    });
+                }
+            });
+        });
+
+        function submitData() {
+            const csapattars1 = document.getElementById("csapattars1").value;
+            const csapattars2 = document.getElementById("csapattars2").value;
+            const fiu=document.getElementById("fiukategoria").value;
+            const lany=document.getElementById("lanykategoria").value;
+            if(fiu){
+                kategoria="fiu"
+            }
+            else{
+                kategoria="lany"
+            }
+            
+
+            sendData("Floorball", {csapattars1,csapattars2}, kategoria);
+        }
+    </script>
+</body>

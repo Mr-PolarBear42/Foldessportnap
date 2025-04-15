@@ -1,20 +1,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labdarúgás</title>
+    <title>Röplabda</title>
     <link rel="stylesheet" href="main.css">
 </head>
     <body>
-        <h1>Labdarúgás</h1>
+        <h1>Röplabda</h1>
         <h2>Szabályok: </h2>
         <h3>- Csapatonként egy fő regisztráljon!</h3>
         <h3>- A nevezési mezőbe magadat nem kell megadnod!</h3>
         <h3>- Egyenes kieséses formátum.</h3>
-        <h3>- 5 (4+1) fős csapatok nevezését várjuk.</h3>
-        <h4>(3 vagy kevesebb megjelenő tag esetén a csapat automatikusan veszít)</h4>
-        <h3>- A mérkőzések 3 lőtt gólig, de legfeljebb 5 percig tartanak.</h3>
-        <h3>- Döntetlen esetén büntető párbaj dönt az eredményről</h3>
-        <h3>Helyszín: D tonaterem<h3>
+        <h3>- 6 vagy 7 (6 + 1 csere) fős csapatok nevezését várjuk.</h3>
+        <h4>(5 vagy kevesebb megjelenő tag esetén a csapat automatikusan veszít)</h4>
+        <h3>- Egy csapatban legalább 3 lánynak kell lennie.</h3>
+        <h3>- A mérkőzések 21 pontig de legfeljebb 15 percig</h3>
+        <h3>- 15 percnél döntetlen esetén aranypont dönt.</h3>
+        <h3>Helyszín: A tonaterem<h3>
         <div class="container">
             <h1>Nevezés</h1>
             <h2>Csapattagok</h2>
@@ -26,7 +27,11 @@
             <label class="h2" for="csapapttars3">Csapattag 3</label>
             <input type="text" name="csapattars3" id="csapattars3"required><br>
             <label class="h2" for="csapapttars4">Csapattag 4</label>
-            <input type="text" name="csapattars4" id="csapattars4"><br>
+            <input type="text" name="csapattars4" id="csapattars4"required><br>
+            <label class="h2" for="csapattars5">Csapattag 5</label>
+            <input type="text" name="csapattars5" id="csapattars5" required><br>
+            <label class="h2" for="csere">Csere (opcionális)</label>
+            <input type="text" name="csere" id="csere"><br>
         </div>
     </body>
     <button onclick="submitData()">Regisztrálás</button>
@@ -39,8 +44,11 @@
             const csapattars1 = document.getElementById("csapattars1").value;
             const csapattars2 = document.getElementById("csapattars2").value;
             const csapattars3 = document.getElementById("csapattars3").value;
-            const csapattars4 = document.getElementById("csapattars4").value;
-            sendData("Labdarúgás", {csapattars1,csapattars2,csapattars3,csapattars4}, "Nincs");
+            const csapattars4 = document.getElementById("csapattars4").value
+            const csapattars5 = document.getElementById("csapattars5").value;
+            const csere = document.getElementById("csere").value;
+
+            sendData("Röplabda", {csapattars1,csapattars2,csapattars3,csapattars4,csapattars5,csere}, "Nincs");
         }
         
     </script>
