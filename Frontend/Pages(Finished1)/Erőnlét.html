@@ -24,9 +24,9 @@
             Plank
             <input type="checkbox" name="plank" id="plank">
         </label>
-        <label for="egyeb">
-            Valami egyéb
-            <input type="checkbox" name="egyeb" id="egyeb">
+        <label for="fekvenyomas">
+            Fekvenyomás
+            <input type="checkbox" name="fekvenyomas" id="fekvenyomas">
         </label>
         
     </div>
@@ -45,8 +45,8 @@
         if(document.getElementById("plank").value==true){
             sports+=" plank";
         }
-        if(document.getElementById("egyeb").value==true){
-            sports+=" egyéb";
+        if(document.getElementById("fekvenyomas").value==true){
+            sports+=" fekvenyomas";
         }
         function submitData(){
             sendData("Erőnlét", {}, sports);

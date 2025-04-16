@@ -1,0 +1,40 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kötélhúzás</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Kötélhúzás</h1>
+    <h2>Szabályok: </h2>
+    <h3>- Csapatonként egy fő regisztráljon!</h3>
+    <h3>- A nevezési mezőbe magadat nem kell megadnod!</h3>
+    <h3>- Egyenes kieséses formátum.</h3>
+    <h3>- 3 fős csapatok nevezését várjuk.</h3>
+    <h4>(2 vagy kevesebb megjelenő tag esetén a csapat automatikusan veszít)</h4>
+    <h3>- A csapatban legalább 1 lánynak kell lennie.</h3>
+    <h3>- A mérkőzések 2 nyert játszmáig tartanak.</h3>
+    <h3>Helyszín: Udvar<h3>
+    <div class="container">
+        <h1>Nevezés</h1>
+        <h2>Csapattagok</h2>
+        <form id="csapattarsak"></form>
+        <label class="h2" for="csapattars1">Csapattag 1</label>
+        <input type="text" name="csapattars1" id="csapattars1" required><br>
+        <label class="h2" for="csapattars2">Csapattag 2</label>
+        <input type="text" name="csapattars2" id="csapattars2" required><br>
+    </div>
+    <button onclick="submitData()">Regisztrálás</button>
+
+    
+    <script type="text/javascript" src="sendData.js"></script>
+    <script>
+        function submitData() {
+            const csapattars1 = document.getElementById("csapattars1").value;
+            const csapattars2 = document.getElementById("csapattars2").value;
+            const fiu=document.getElementById("fiukategoria").value;
+            const lany=document.getElementById("lanykategoria").value;
+            sendData("Streetball", {csapattars1,csapattars2}, kategoria);
+        }
+    </script>
+</body>
