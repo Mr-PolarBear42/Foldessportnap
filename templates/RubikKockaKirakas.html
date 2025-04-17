@@ -1,8 +1,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egyenisportminta</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Rubik Kocka Kirakás</title>
+    <link rel="stylesheet" href="static\css\main.css">
 </head>
     <body>
         <h1>Rubik Kocka Kirakó Verseny</h1>
@@ -12,12 +12,11 @@
         <h3>- Az azonos körülmények fenntartása érdekében azonos keveréseket kapnbak a versenyzők</h3>
         <h4>(Saját kocka használható de biztosítunk több különböző kockát)</h4>
         <h3>- Továbbjutás: Résztvevők számától függően 50%, de legalább a legjobb három</h3>
-        <button type="button" onclick="submitData()">Regisztrálás</button>
+        <button onclick="submitData()">Regisztrálás</button>
     </body>
-    
-    <script>
-        function submitData(){
-            sendData("RubikkockaKirakas", {}, "Nincs");
-        }
-    </script>
+        <script type="text/javascript" src="static\js\sendData.js"></script>
+           function submitData(){
+               sendData("Szkander", {}, "Nincs");
+           }
+           </script>
     
