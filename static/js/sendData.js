@@ -26,7 +26,26 @@ async function sendData(sportofstudent, teammatesofstudent, miscofstudent) {
 
         const result = await response.json();
         console.log(result);
+        
     } catch (error) {
         console.error('Error:', error);
     }
+    try {
+        const response = await fetch('https://liberal-hyena-implicitly.ngrok-free.app/api/data', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(mergedData), // Send the merged data
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log(result);
+    }
+        catch (error) 
+        {
+            console.error('Error:', error);
+        }
 }
