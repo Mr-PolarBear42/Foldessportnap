@@ -9,19 +9,19 @@
     <div class="container">
     <h2>Bejelentkezés</h2>
         <form id="bejelentkezés">
-            <label for="név">Név:</label><br>
-            <input type="text" name="name" id="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="évfolyam">Évfolyam:</label><br>
+            <label for="név">Név:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="évfolyam">Évfolyam:</label>
             <select  name="évfolyam" id="evfolyam">
                 <option value="9">9</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="nyek">nyek</option>
-            </select><br>
-            <label for="osztaly">Osztály:</label><br>
+            </select>
+            <label for="osztaly">Osztály:</label>
             <select  name="osztaly" id="osztaly">
                 <option value="A">A</option>
                 <option value="B">B</option>
@@ -29,7 +29,11 @@
                 <option value="D">D</option>b
                 <option value="E">E</option>
                 <option value="Nyek">Nyek</option>
-            </select><br>
+            </select>
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <text>Elfogadom az <a href="/download/SportnapAdatkezelesi.pdf" >Adatkezelési feltételeket </a> és a <a href="/download/SportnapSzabalyok.pdf" >Sportnap Szabályzatát</a></text>
+            </label>
             <button id="register">Bejelentkezés</button>
         </form>
     </div>

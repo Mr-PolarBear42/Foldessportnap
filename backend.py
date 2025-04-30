@@ -1,14 +1,24 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, redirect, render_template, request, jsonify
 import openpyxl
 from openpyxl import load_workbook
+from flask import send_file
+
 app = Flask(__name__)
+
 @app.route('/')
 def home():
     return render_template('login.html')
 
+@app.route('/download/<filename>')
+def download_file(filename):
+    file_path = f"C:/Users/szori/OneDrive/Asztali gép/Zalán mappa/Coding/Foldessportnap/docs/{filename}"
+    try:
+        return send_file(file_path, as_attachment=True)
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)})
+    
 @app.route('/<page>')
 def show_page(page):
-    
     return render_template(f'{page}.html')
 
 @app.route('/api/data', methods=['POST'])
