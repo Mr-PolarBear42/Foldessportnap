@@ -15,7 +15,7 @@ def download_file(filename):
     if filename=="Jelentkezők.xlsx":
         file_path="Jelentkezők.xlsx"
     else:
-        file_path = f"/docs/{filename}"
+        file_path = f"docs/{filename}"
     try:
         return send_file(file_path, as_attachment=True)
     except Exception as e:
