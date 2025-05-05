@@ -13,9 +13,9 @@ def home():
 def download_file(filename):
     print(filename)
     if filename=="Jelentkezők.xlsx":
-        file_path="C:/Users/szori/OneDrive/Asztali gép/Zalán mappa/Coding/Foldessportnap/Jelentkezők.xlsx"
+        file_path="Jelentkezők.xlsx"
     else:
-        file_path = f"C:/Users/szori/OneDrive/Asztali gép/Zalán mappa/Coding/Foldessportnap/docs/{filename}"
+        file_path = f"/docs/{filename}"
     try:
         return send_file(file_path, as_attachment=True)
     except Exception as e:
@@ -38,7 +38,7 @@ def receive_data():
     data_list[5].removesuffix("}")
     
     print("Converted data to list:", data_list)
-    wb=load_workbook("C:/Users/szori/OneDrive/Asztali gép/Zalán mappa/Coding/Foldessportnap/Jelentkezők.xlsx")
+    wb=load_workbook("Jelentkezők.xlsx")
     print(wb.sheetnames)
     ws=wb.active
     ws.append(data_list)
