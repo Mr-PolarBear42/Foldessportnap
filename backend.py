@@ -5,7 +5,7 @@ from googleapiclient.discovery import build
 app = Flask(__name__)
 
 # === Google Sheets Setup ===
-SERVICE_ACCOUNT_FILE = "secrets/service_account.json"  # Your downloaded key
+SERVICE_ACCOUNT_FILE = "service_account.json"  # Your downloaded key
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SHEET_ID = '16zdMIdAF2ZmdYHge7pY905BSBjxgjN35RNRIX48cSRY'         # <-- Replace with your Google Sheet ID
 SHEET_RANGE = 'Jelentkezők!A2'                      # Adjust as needed
