@@ -31,7 +31,7 @@ async function sendData(sportofstudent, teammatesofstudent, miscofstudent) {
         console.error('Error:', error);
     }
     try {
-        const response = await fetch('https://liberal-hyena-implicitly.ngrok-free.app/api/data', {
+        const response = await fetch('http://127.0.0.1:10000/api/data', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(mergedData), // Send the merged data
