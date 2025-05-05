@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -21,6 +21,14 @@ def home():
 @app.route('/<page>')
 def show_page(page):
     return render_template(f'{page}.html')
+
+@app.route('/download/<filename>')
+def download_file(filename):
+    file_path = f"docs/{filename}"
+    try:
+        return send_file(file_path, as_attachment=True)
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)})
 
 @app.route('/api/data', methods=['POST'])
 def receive_data():
