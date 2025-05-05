@@ -38,18 +38,19 @@
     <!-- Move the script to the end of the body -->
      <script type="text/javascript" src="static\js\sendData.js"></script>
     <script>
-        const sports="";
-        if(document.getElementById("fekvotamasz").value==true){
-            sports+=" fekvőtámasz";
+
+        let sports = "";
+        if (document.getElementById("fekvotamasz").checked) {
+            sports += " fekvőtámasz";
         }
-        if(document.getElementById("huzodkodas").value==true){
-            sports+=" húzódzkodás";
+        if (document.getElementById("huzodzkodas").checked) {
+            sports += " húzódzkodás";
         }
-        if(document.getElementById("plank").value==true){
-            sports+=" plank";
+        if (document.getElementById("plank").checked) {
+            sports += " plank";
         }
-        if(document.getElementById("fekvenyomas").value==true){
-            sports+=" fekvenyomas";
+        if (document.getElementById("fekvenyomas").checked) {
+            sports += " fekvenyomas";
         }
         function submitData(){
             window.alert("Sikeres Regisztráció")
