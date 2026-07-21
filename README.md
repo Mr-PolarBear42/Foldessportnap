@@ -8,7 +8,6 @@ A web application designed to streamline student registration and event sign-ups
 
 * **Backend:** Python (Flask)
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-* **Database / Data Handling:** SQLite / JSON *(or adjust based on what you used)*
 
 ---
 
